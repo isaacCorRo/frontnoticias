@@ -1,6 +1,9 @@
-<div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource">
 
+
+<div class="mat-elevation-z8">  
+      <input matInput (input)="applyFilter($event)" placeholder="Buscar por título">  
+    
+  <table mat-table [dataSource]="dataSource">
 
      <ng-container matColumnDef="titulo">
       <th mat-header-cell *matHeaderCellDef> Título </th>
