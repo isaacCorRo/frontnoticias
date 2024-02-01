@@ -1,6 +1,6 @@
-import { HttpClient, HttpEvent, HttpResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, map, throwError } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Noticia } from '../interfaces/Noticia';
 import { Listnoticias } from '../interfaces/Listnoticias';
 import { NoticiasResponse } from '../interfaces/favoritos';
