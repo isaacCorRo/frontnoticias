@@ -1,9 +1,6 @@
 import { ServicioService } from './../services/servicio.service';
 import { Component, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Noticia } from '../interfaces/Noticia';
-import { Listnoticias } from '../interfaces/Listnoticias';
-import { HttpClient } from '@angular/common/http';
 import { MatPaginator } from '@angular/material/paginator';
 import { NoticiaResponse } from '../interfaces/favoritos';
 
@@ -11,6 +8,7 @@ import { NoticiaResponse } from '../interfaces/favoritos';
   selector: 'app-favoritos',
   templateUrl: './favoritos.component.html',
   styleUrls: ['./favoritos.component.css']
+  
 })
 export class FavoritosComponent {
   [x: string]: any;
@@ -42,8 +40,7 @@ export class FavoritosComponent {
         }
       },
       (error: any) => {
-        console.error('Error al obtener noticias favoritas:', error);
-        // ... (resto del código)
+        console.error('Error al obtener noticias favoritas:', error);        
       }
     );
   }
