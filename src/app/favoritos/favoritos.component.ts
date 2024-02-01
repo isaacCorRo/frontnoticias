@@ -81,6 +81,10 @@ export class FavoritosComponent {
   
     
   }
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
+  }
 
 
 }
